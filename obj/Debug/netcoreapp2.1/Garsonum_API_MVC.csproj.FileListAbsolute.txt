@@ -12,3 +12,17 @@ C:\Users\Stelvip\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcor
 C:\Users\Stelvip\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.RazorTargetAssemblyInfo.cache
 C:\Users\Stelvip\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.dll
 C:\Users\Stelvip\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.pdb
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\bin\Debug\netcoreapp2.1\Garsonum_API_MVC.deps.json
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\bin\Debug\netcoreapp2.1\Garsonum_API_MVC.runtimeconfig.json
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\bin\Debug\netcoreapp2.1\Garsonum_API_MVC.runtimeconfig.dev.json
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\bin\Debug\netcoreapp2.1\Garsonum_API_MVC.dll
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\bin\Debug\netcoreapp2.1\Garsonum_API_MVC.pdb
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.RazorAssemblyInfo.cache
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.RazorAssemblyInfo.cs
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.RazorTargetAssemblyInfo.cache
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.dll
+C:\Users\ASUS\source\repos\Garsonum_API_MVC\Garsonum_API_MVC\obj\Debug\netcoreapp2.1\Garsonum_API_MVC.pdb
