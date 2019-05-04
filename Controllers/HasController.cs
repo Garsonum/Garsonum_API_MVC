@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Garsonum_API_MVC.ModelDbs;
+using Garsonum_API_MVC.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,15 +13,16 @@ namespace Garsonum_API_MVC.Controllers
     [ApiController]
     public class HasController : ControllerBase
     {
+        HasDb hdb = new HasDb();
         // GET: api/Has
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Has> Get()
         {
-            return new string[] { "value1", "value2" };
+            return hdb.GetHas();
         }
 
         // GET: api/Has/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetHas")]
         public string Get(int id)
         {
             return "value";

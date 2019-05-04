@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Garsonum_API_MVC.ModelDbs;
+using Garsonum_API_MVC.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,24 +13,26 @@ namespace Garsonum_API_MVC.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
+        OrderDb odb = new OrderDb();
         // GET: api/Order
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Order> Get()
         {
-            return new string[] { "value1", "value2" };
+            return odb.GetOrder() ;
         }
 
         // GET: api/Order/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "GetOrder")]
+        public IEnumerable<Order> Get(int id)
         {
-            return "value";
+            return odb.GetOrderById(id);
         }
 
         // POST: api/Order
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Order order)
         {
+            odb.Create(order);
         }
 
         // PUT: api/Order/5
@@ -41,6 +45,7 @@ namespace Garsonum_API_MVC.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            odb.Delete(id);
         }
     }
 }

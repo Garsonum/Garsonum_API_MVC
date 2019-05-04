@@ -22,7 +22,7 @@ namespace Garsonum_API_MVC.Controllers
         }
 
         // GET: api/Cafes/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetCafe")]
         public IEnumerable<Cafe> Get(int id)
         {
             return cdb.GetById(id);
@@ -30,8 +30,9 @@ namespace Garsonum_API_MVC.Controllers
 
         // POST: api/Cafes
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Cafe cafe)
         {
+            cdb.Create(cafe);
         }
 
         // PUT: api/Cafes/5
@@ -44,6 +45,7 @@ namespace Garsonum_API_MVC.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            cdb.Delete(id);
         }
     }
 }

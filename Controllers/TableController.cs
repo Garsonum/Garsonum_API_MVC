@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Garsonum_API_MVC.ModelDbs;
+using Garsonum_API_MVC.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,24 +13,26 @@ namespace Garsonum_API_MVC.Controllers
     [ApiController]
     public class TableController : ControllerBase
     {
+        TableDb tdb = new TableDb();
         // GET: api/Table
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Table> Get()
         {
-            return new string[] { "value1", "value2" };
+            return tdb.GetTable();
         }
 
         // GET: api/Table/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "GetTable")]
+        public IEnumerable<Table> Get(int id)
         {
-            return "value";
+            return tdb.GetTableById(id);
         }
 
         // POST: api/Table
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post(Table table)
         {
+            tdb.Create(table);
         }
 
         // PUT: api/Table/5
@@ -41,6 +45,7 @@ namespace Garsonum_API_MVC.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            tdb.Delete(id);
         }
     }
 }

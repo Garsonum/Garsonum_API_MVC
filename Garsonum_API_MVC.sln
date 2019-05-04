@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garsonum_API_MVC", "Garsonum_API_MVC\Garsonum_API_MVC.csproj", "{2088BF7B-6009-4887-AE74-9657C0E455A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2088BF7B-6009-4887-AE74-9657C0E455A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2088BF7B-6009-4887-AE74-9657C0E455A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2088BF7B-6009-4887-AE74-9657C0E455A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2088BF7B-6009-4887-AE74-9657C0E455A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B1776B8-F283-48D4-82F6-5043A67D47FA}
+	EndGlobalSection
+EndGlobal

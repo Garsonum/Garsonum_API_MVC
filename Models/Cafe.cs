@@ -15,9 +15,9 @@ namespace Garsonum_API_MVC.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public byte[] Image { get; set; }
-        public int QrId { get; set; }
+        public string QrId { get; set; }
         public string Info { get; set; }
-        public Guid? Password { get; set; }
+        public string Password { get; set; }
         public string Address { get; set; }
 
         public ICollection<Category> Category { get; set; }

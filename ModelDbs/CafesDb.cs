@@ -18,5 +18,15 @@ namespace Garsonum_API_MVC.Models
         {
             return garsonum.Cafe.Where(c => c.CId == ID).ToList();
         }
+        public void Delete(int id)
+        {
+            garsonum.Cafe.Remove(garsonum.Cafe.Where(c => c.CId == id).First());
+        }
+        public void Create(Cafe cafe)
+        {
+            garsonum.Cafe.Add(cafe);
+            garsonum.SaveChangesAsync();
+
+        }
     }
 }

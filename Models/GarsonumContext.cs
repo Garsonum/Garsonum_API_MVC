@@ -28,7 +28,7 @@ namespace Garsonum_API_MVC.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=tcp:garsonum.database.windows.net,1433;Initial Catalog=Garsonum;Persist Security Info=False;User ID=Garsonum;Password=grsnm96bMe.;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer("Server=tcp:garsonum.database.windows.net,1433;Initial Catalog=Garsonum;Persist Security Info=False;User ID=Garsonum;Password=grsnm96bMe.;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Database=Garsonum;Trusted_Connection=False;");
             }
         }
 
@@ -61,9 +61,14 @@ namespace Garsonum_API_MVC.Models
                     .HasColumnName("name")
                     .HasMaxLength(50);
 
-                entity.Property(e => e.Password).HasColumnName("password");
+                entity.Property(e => e.Password)
+                    .HasColumnName("password")
+                    .HasMaxLength(50);
 
-                entity.Property(e => e.QrId).HasColumnName("qr_id");
+                entity.Property(e => e.QrId)
+                    .IsRequired()
+                    .HasColumnName("qr_id")
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Category>(entity =>
@@ -143,7 +148,6 @@ namespace Garsonum_API_MVC.Models
                     .HasMaxLength(500);
 
                 entity.Property(e => e.PImage)
-                    .IsRequired()
                     .HasColumnName("p_image")
                     .HasMaxLength(100);
 
@@ -189,7 +193,9 @@ namespace Garsonum_API_MVC.Models
             {
                 entity.HasKey(e => e.UId);
 
-                entity.Property(e => e.UId).HasColumnName("u_id");
+                entity.Property(e => e.UId)
+                    .HasColumnName("u_id")
+                    .ValueGeneratedNever();
 
                 entity.Property(e => e.City)
                     .HasColumnName("city")
@@ -210,14 +216,16 @@ namespace Garsonum_API_MVC.Models
                     .HasColumnName("lastname")
                     .HasMaxLength(50);
 
-                entity.Property(e => e.Password).HasColumnName("password");
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasColumnName("password")
+                    .HasMaxLength(50);
 
                 entity.Property(e => e.TId).HasColumnName("t_id");
 
                 entity.HasOne(d => d.T)
                     .WithMany(p => p.User)
                     .HasForeignKey(d => d.TId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_User_Table");
             });
         }

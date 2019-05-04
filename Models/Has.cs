@@ -5,7 +5,7 @@ namespace Garsonum_API_MVC.Models
 {
     public partial class Has
     {
-        public int UId { get; set; }
+        public Guid UId { get; set; }
         public int OId { get; set; }
         public int PId { get; set; }
         public double? PPortion { get; set; }
